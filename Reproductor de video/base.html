@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>| TRAILER | Nadar o Morir |</title>
+  <link rel="stylesheet" href="css_01/style.css">
+  <script src="https://kit.fontawesome.com/79e7c86d22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <button><a href="http://127.0.0.1:3000/Interfaz_de_Netflix/index.html" id="btnInicio"><i class="fas fa-house"></i></a></button>
+<div id="videoContainer">
+  <video id="myVideo" autoplay>
+    <source src="video/Vídeo sin título ‐ Hecho con Clipchamp.mp4" type="video/mp4">
+  </video>
+
+  <p id="videoControls">
+    <button onclick="playVideo()"><i class="fas fa-play"></i></button>
+    <button onclick="pauseVideo()"><i class="fas fa-pause"></i></button>
+    <button onclick="stopVideo()"><i class="fas fa-stop"></i></button>
+    <button onclick="backward10Seconds()"><i class="fas fa-backward"></i></button>
+    <button onclick="forward10Seconds()"><i class="fas fa-forward"></i></button>
+    <button onclick="fullscreenBtn()"><i class="fas fa-expand"></i></button>
+    <input type="range" id="seekBar" value="0" step="1" onchange="updateSeekBar()">
+  </div>
+</div>
+
+<script src="js_01/script.js"></script>
+
+</body>
+</html>
+<style>
+  button {
+    margin-top: 10px;
+  }
+
+  button {
+    margin-left: 10px
+  }
+
+        body::-webkit-scrollbar {
+          width: 12px;
+        }
+    
+        body::-webkit-scrollbar-track {
+          background-color: #141414;
+        }
+    
+        body::-webkit-scrollbar-thumb {
+          background-color: #db0606;
+          border-radius: 6px;
+        }
+    
+        body::-webkit-scrollbar-thumb:hover {
+          background-color: #b10505;
+        }
+        
+    }
+        
+</style>
